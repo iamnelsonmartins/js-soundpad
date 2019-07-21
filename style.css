@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merienda', cursive;
+  height: 100%;
+}
+
+body {
+  background:
+  radial-gradient(circle at 50% 0,
+  rgba(255,0,0,.5),
+  rgba(255,0,0,0) 70.71%),
+radial-gradient(circle at 6.7% 75%,
+  rgba(0,0,255,.5),
+  rgba(0,0,255,0) 70.71%),
+radial-gradient(circle at 93.3% 75%,
+  rgba(0,255,0,.5),
+  rgba(0,255,0,0) 70.71%) beige;
+}
+
+.wrapper {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 20px;
+  width: 500px;
+  height: 580px;
+  margin-left:-250px;
+  left:50%;
+  top:50px;
+  position: relative;
+  padding: 10px;
+}
+
+.title {
+  color:#FFF;
+  font-size: 50pt;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+.keys {
+  margin-top:20px;
+  margin-left:35px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+}
+
+.key {
+  width: 120px;
+  height: 120px; 
+  border-radius: 5px;
+  font-size: 10pt;
+  transition: all .07s ease;
+  text-align: center;
+  color: #FFF;
+  border-radius: 50%;
+}
+
+.key:nth-child(-n+3){
+  background-color:#23ACD8;
+}
+
+.key:nth-child(n+4){
+  background-color:#24DA8F;
+}
+
+.key:nth-child(n+7){
+  background-color:#FF4B4A;
+}
+
+
+.playing {
+  transform: scale(1.2);
+}
+
+kbd {
+  margin-top: 15px;
+  display: block;
+  font-size: 3rem;
+  font-family: 'Merienda', cursive;
+
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: lowercase;
+  color: #FFF;
+  font-family: monospace;
+}
